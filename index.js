@@ -27,7 +27,7 @@ function getContent(body) {
   // Write to file substack-imgs.csv
   var writeArr = [];
   writeArr.push(finalArr.join(''));
-  fs.writeFile('substack-imgs.csv', writeArr, function(err) {
+  fs.writeFile('images.csv', writeArr, function(err) {
     if (err) {
       return console.log(err);
     }
